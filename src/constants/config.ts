@@ -34,19 +34,22 @@ type TConfig = {
     about: Required<TSection>;
     experience: TSection;
     feedbacks: TSection;
+    "technical Skills": TSection;
     works: Required<TSection>;
   };
 };
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Spandana N Rao 3D Portfolio",
+    fullName: "Spandana N",
+    email: "spandana.nrao@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Spandana N",
+    p: [
+      "I develop data visualizations, dashboards, and analytical reports, turning complex datasets into actionable insights.",
+    ],
   },
   contact: {
     p: "Get in touch",
@@ -56,7 +59,10 @@ export const config: TConfig = {
         span: "Your Name",
         placeholder: "What's your name?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: {
+        span: "Your Email",
+        placeholder: "What's your email?",
+      },
       message: {
         span: "Your Message",
         placeholder: "What do you want to say?",
@@ -67,9 +73,8 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
+      content: `I am a passionate and detail-oriented professional with a strong background in data analysis, visualization, and decision-making. My expertise lies in translating raw data into meaningful insights that drive strategic growth and informed decisions.
+       I'm a quick learner and collaborate closely with clients to
       create efficient, scalable, and user-friendly solutions that solve
       real-world problems. Let's work together to bring your ideas to life!`,
     },
@@ -78,8 +83,12 @@ export const config: TConfig = {
       h2: "Work Experience.",
     },
     feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
+      p: "What I Had Achieved",
+      h2: "Certifications.",
+    },
+    "technical Skills": {
+      p: "I am Good at",
+      h2: "Technical Skills.",
     },
     works: {
       p: "My work",
